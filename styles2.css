@@ -1,0 +1,17 @@
+div {
+    width: 300px;
+    border: 15px solid green;
+    /* top right bottom left */
+    /* top and bottom, right and left */
+    padding: 80px 50px 20px 10px;
+    margin: 40px;
+  }
+
+span {
+    border: 2px solid black;
+    padding: 50px;
+    margin: 100px;
+    display: inline;
+    display: block; 
+    display: inline-block;
+}

@@ -1,0 +1,28 @@
+/* Selecting by tag name */
+div {
+    background-color: aquamarine;
+}
+
+/* Select by class name */
+/* Class selector */
+.second {
+    color: red;
+}
+
+.fourth {
+    color: green;
+}
+
+/* Selecting by tag name and class name (elements that contain certain class names) */
+div.container {
+    border: 2px solid black;
+}
+
+/* Select multiple elements */
+div, p {
+    font-size: 30px;
+}
+
+div.second, div.fourth {
+    padding: 20px;
+}
