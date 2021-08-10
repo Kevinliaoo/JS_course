@@ -1,4 +1,53 @@
-/* The * selector (universal selector) applies to ALL the elements */
+/* The browser has it's own default CSS styles */
+
+/* Add this 3 lines to all CSS files */
 * {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* Style all the divs */
+div {
+    height: 50px;
+    border: 2px solid black;
+    margin-top: 10px;
+}
+
+/* Class selector */
+.one {
+    background-color: aquamarine;
+}
+
+.two {
+    background-color: beige;
+}
+
+.three {
+    background-color: brown;
+}
+
+/* ID selector */
+#four {
+    background-color: chartreuse;
+}
+
+#six {
+    background-color: darkorchid;
+}
+
+/* All p elements inside a div */
+div p {
     font-family: sans-serif;
+    font-weight: bold;
+}
+
+/* All A's descendents of a div element */
+div a {
+    color: white;
+}
+
+/* Those a's which has a div father (NOT grandfather) */
+div>a {
+    background-color: black;
 }

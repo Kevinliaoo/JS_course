@@ -1,32 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>CSS revision</title>
-		<link rel="stylesheet" href="styles.css" />
-	</head>
-	<body>
-		<!-- Block element -->
-		<!-- Block element will occupy all the width -->
-		<div>This is a div</div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Add CSS styles -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
 
-		<p>This is a p element</p>
+    <!-- CSS selectors -->
+    <div class="one">
+        <p>Lorem ipsum</p>
+    </div>
 
-		<h1>This is a h1</h1>
+    <!-- block elements CAN have both block and inline elements as a child -->
+    <!-- inline elements CAN NOT have block elements as a child -->
 
-		<!-- Inline elment -->
-		<!-- Inline elements will occupy necesary space -->
-		<span>This is a span</span>
 
-		<a>This is an anchor element</a>
+    <!-- Parent -->
+    <div class="two">
+        <!-- Chils -->
+        <p class="child1">
+            <!-- This a inherits father's styles -->
+            <!-- This a's father is a p -->
+            <a clas="baby">A inside of a p</a>
+            <p></p>
+            <p></p>
+            <p></p>
 
-		<p>
-			The main difference between block and inline elements, is the space
-			they occupy. <br />
-			There are some elements set as block as default: div, h1, p, etc.
-			<br />Set as inline by default: span, a
-		</p>
-	</body>
+        </p>
+        <!-- This a's father is a div -->
+        <a class="child2">A inside of a div</a>
+    </div>
+
+    <div class="three">
+        <p>Lorem ipsum</p>
+    </div>
+
+    <div class="four" id="four">
+        <p>Lorem ipsum</p>
+    </div>
+
+    <div class="five" id="six">
+        <p>Lorem ipsum</p>
+    </div>
+
+</body>
 </html>

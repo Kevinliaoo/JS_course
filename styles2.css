@@ -1,17 +1,15 @@
-div {
-    width: 300px;
-    border: 15px solid green;
-    /* top right bottom left */
-    /* top and bottom, right and left */
-    padding: 80px 50px 20px 10px;
-    margin: 40px;
-  }
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
 
-span {
-    border: 2px solid black;
-    padding: 50px;
-    margin: 100px;
-    display: inline;
-    display: block; 
-    display: inline-block;
+/* Sibling selector */
+.spetialp+.spetailh1 {
+    color: violet;
+}
+
+div#container p.colorLeter {
+    font-family: sans-serif;
+    color: teal;
 }
