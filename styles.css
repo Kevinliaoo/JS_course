@@ -1,53 +1,79 @@
-/* The browser has it's own default CSS styles */
-
-/* Add this 3 lines to all CSS files */
+/* Default settings */
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0px; 
+    margin: 0px; 
     box-sizing: border-box;
 }
 
-/* Style all the divs */
-div {
-    height: 50px;
-    border: 2px solid black;
-    margin-top: 10px;
+/* The first one */
+.static {
+    /* static is the default value for positioning */
+    position: static;
+    /* This positioning will not have effect */
+    top: 10px;
+    left: 50px;
 }
 
-/* Class selector */
-.one {
-    background-color: aquamarine;
+/* The second one */
+.relative {
+    /* The element is relatively positioned to it's normal position */
+    /* To move elements, you should change the position to relative */
+    position: relative; 
+    /* "Like" a margin */
+    top: 1500px; 
+
+    /* top, right, bottom, left */
 }
 
-.two {
-    background-color: beige;
+.fixed {
+    position: fixed;
+    width: 400px;
+    bottom: 0px;
+    left: 50px;
 }
 
-.three {
-    background-color: brown;
-}
-
-/* ID selector */
-#four {
-    background-color: chartreuse;
-}
-
-#six {
-    background-color: darkorchid;
-}
-
-/* All p elements inside a div */
-div p {
-    font-family: sans-serif;
-    font-weight: bold;
-}
-
-/* All A's descendents of a div element */
-div a {
+.parent {
+    height: 500px;
+    background-color:black;
     color: white;
+    
+    position: relative;
 }
 
-/* Those a's which has a div father (NOT grandfather) */
-div>a {
-    background-color: black;
+.child {
+    width: 100px; 
+    height: 100px;
+
+    position: absolute;
+    top: 70px;
+    right: 100px;
+}
+
+.sticky {
+    height: 50px;
+    top: 100px;
+    background-color: red;
+    position: sticky;
+}
+
+div {
+    height: 5000px;
+    background-color:blanchedalmond;
+}
+
+.logo {
+    position: relative; 
+    top: 0; 
+    right: 0;
+    z-index: 10;
+}
+
+.apple {
+    font-size: 40px;
+    font-family: sans-serif;
+    color: white;
+    position: absolute;
+    top: 125px; 
+    left: 10px;
+    z-index: 20;
 }
