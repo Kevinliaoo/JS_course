@@ -1,0 +1,45 @@
+header {
+    height: 70px;
+}
+
+img.profilepic {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+img.menu {
+    position: absolute; 
+    right: 75px;
+    top: 23px;
+}
+
+/* Multiple selection */
+img.profilepic:hover, img.menu:hover {
+    /* Change the mouse to a pointer */
+    cursor: pointer;
+    box-shadow: 0 0 10px gray;
+}
+
+a.images {
+    position: absolute; 
+    right: 140px; 
+    top: 26px;
+}
+
+a.gmail {
+    position: absolute; 
+    right: 220px; 
+    top: 26px;
+}
+
+a {
+    /* Take out the underline */
+    text-decoration: none;
+    color: gray;
+}
+
+/* psuedo element: set styles for the element in different states */
+a:hover {
+    text-decoration: underline;
+}
