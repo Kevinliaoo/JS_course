@@ -1,19 +1,29 @@
-// Distance in miles
-let distance = 5;
+// Boolean: true or false
 
-// Constants: Like a variable BUT it does not change
-const NUMBER = 1.6;
-// consts CAN NOT be modified
+let name = 'Tamur'; // string
+let age = 14; // number
+let hobby = 'Basketball';
 
-// 1.6 x distance
-let distanceInKm = distance * NUMBER;
+let username = 'Tamur123';
+let pass = 'pass224';
 
-console.log(distance + ' miles is equal to ' + distanceInKm + ' km');
+// AND
+// Checking if:
+// Your name is Tamur AND your age is 14
+if (name === 'Tamur' && age === 14 && hobby === 'Basketball') {
+	console.log('You are Tamur');
+}
 
-// Change the value of the variable
-// Reassingning the value of variables
-distance = 10;
-distanceInKm = distance * NUMBER;
-// We can not re assign values of Constants
-// NUMBER = 1.7; //ERRORR
-console.log(distance + ' miles is equal to ' + distanceInKm + ' km');
+// OR
+// Checks if:
+// One part of the "sentence" is true, just only one part is enougth
+if (name === 'Tamur' || age === 14 || hobby === 'Basketball') {
+	console.log('This statement is true');
+}
+
+// Makes the user to insert a message
+let message = prompt('Please insert the first message');
+let message2 = prompt('Please insert the second message');
+
+console.log(message);
+console.log(message2);
