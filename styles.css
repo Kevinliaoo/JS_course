@@ -1,0 +1,38 @@
+* {
+    padding: 0px;
+    margin: 0px; 
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 5px;
+    background-color: aqua;
+    border: 2px solid black;
+    /* Convert the container to a flexbox */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+
+#three {
+    align-self: center;
+}
+
+
+
+
+
+
+
+
+
+
+.child {
+    background-color: red;
+    border: 2px solid green;
+    height: 50px;
+    flex-grow: 3;
+    flex-shrink: 3;
+}
