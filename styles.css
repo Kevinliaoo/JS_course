@@ -5,34 +5,17 @@
 }
 
 .container {
-    padding: 5px;
-    background-color: aqua;
-    border: 2px solid black;
-    /* Convert the container to a flexbox */
+    display: flex; 
+    flex-direction: column;
+}
+
+.character {
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    height: 100vh;
+    flex-direction: row;
+    align-items: center;
 }
 
-
-#three {
-    align-self: center;
-}
-
-
-
-
-
-
-
-
-
-
-.child {
-    background-color: red;
-    border: 2px solid green;
-    height: 50px;
-    flex-grow: 3;
-    flex-shrink: 3;
+img {
+    height: 200px;
+    width: 200px;
 }
